@@ -1,0 +1,1100 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Arquitectura modular orientada a plugins y orquestadores por cliente">
+      
+      
+        <meta name="author" content="Jeisson Rodrigez">
+      
+      
+        <link rel="canonical" href="https://jeissonr115.github.io/IndicadoresMatriz/output_data/">
+      
+      
+        <link rel="prev" href="../format/">
+      
+      
+        <link rel="next" href="../tables/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Salida del SP Compras.IndicadoresMatriz - IndicadoresMatriz</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#salida-del-sp-comprasindicadoresmatriz" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="IndicadoresMatriz" class="md-header__button md-logo" aria-label="IndicadoresMatriz" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IndicadoresMatriz
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Salida del SP Compras.IndicadoresMatriz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IndicadoresMatriz" class="md-nav__button md-logo" aria-label="IndicadoresMatriz" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    IndicadoresMatriz
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Análisis IndicadoresMatriz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../format/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Actualización del Formato de Datos para Inventario y Logística
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Salida del SP Compras.IndicadoresMatriz
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Salida del SP Compras.IndicadoresMatriz
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#campos-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campos Principales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Campos Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matrizaportenacional" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizAporteNacional
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizidmaterial" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizIdMaterial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matriznommaterial" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatriznomMaterial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizinventariohoy" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizInventarioHoy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizconsumoanalisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizConsumoAnalisis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizcostototal" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizCostoTotal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizcontribucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizContribucion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizcostounitario" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizCostoUnitario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizclasificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizClasificacion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matriznomproveedor" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizNomProveedor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizleadtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizLeadTime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizpromedioconsumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizPromedioConsumo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizdesvestandar" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizDesvEstandar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizsafetystock" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizSafetyStock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizreorderpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizReorderPoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizcostodeordenar" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizCostoDeOrdenar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizcostodeinventariound" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizCostoDeInventarioUnd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizpreciodecompra" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizPrecioDeCompra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizeoq" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizEOQ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizorden" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizOrden
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizbackorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizBackOrder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matriztransito" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizTransito
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizconsumomaximo" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizConsumoMaximo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizconsumominimo" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizConsumoMinimo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizcomprassafetystock" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizComprasSafetyStock
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#campos-detallados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campos Detallados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Campos Detallados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matrizinventariodeposicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizInventarioDePosicion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrizcantidadsugerida" class="md-nav__link">
+    <span class="md-ellipsis">
+      MatrizCantidadSugerida
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#campos-por-bodega" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campos por Bodega
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Campos por Bodega">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inventario-por-bodega" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inventario por Bodega
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumo-por-bodega" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consumo por Bodega
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tablas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../with/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    With
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="salida-del-sp-comprasindicadoresmatriz">Salida del SP <code>Compras.IndicadoresMatriz</code></h1>
+<h2 id="campos-principales">Campos Principales</h2>
+<h3 id="matrizaportenacional">MatrizAporteNacional</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>IIF(g.MaterialImportado = 1, 'SI', 'NO')</code></li>
+<li><strong>Origen</strong>: </li>
+<li>CTE <a href="../with/#_inventario">_Inventario</a></li>
+<li>Tabla base: <a href="../tables/#genmateriales">genMateriales</a> (campo <code>MaterialImportado</code>)</li>
+<li><strong>Descripción</strong>: Clasifica el material como nacional o importado según su procedencia</li>
+<li><strong>Valores esperados</strong>: <code>'SI'</code> (importado) / <code>'NO'</code> (nacional)</li>
+</ul>
+<h3 id="matrizidmaterial">MatrizIdMaterial</h3>
+<ul>
+<li><strong>Origen directo</strong>: Campo <code>IdMaterial</code> de <a href="../tables/#genmateriales">genMateriales</a></li>
+<li><strong>Proceso</strong>: </li>
+<li>Obtenido del CTE <a href="../with/#_inventario">_Inventario</a></li>
+<li>Vinculado con <a href="../tables/#almmatubicaciones">AlmMatUbicaciones</a> para el cálculo de inventario</li>
+<li><strong>Descripción</strong>: Identificador único del material en el sistema</li>
+<li><strong>Valores esperados</strong>: Enteros positivos (ej. 10045)</li>
+</ul>
+<h3 id="matriznommaterial">MatriznomMaterial</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>CONVERT(VARCHAR(100), (CONVERT(VARCHAR(100), m.IdMaterial) + '-' + g.NomMaterial)</code></li>
+<li><strong>Origen</strong>: </li>
+<li>Tabla <a href="../tables/#genmateriales">genMateriales</a> (campos <code>IdMaterial</code> y <code>NomMaterial</code>)</li>
+<li>CTE <a href="../with/#_inventario">_Inventario</a></li>
+<li><strong>Descripción</strong>: Nombre descriptivo que combina ID y nombre del material</li>
+<li><strong>Valores esperados</strong>: Cadenas de texto (ej. "10045-Tornillo hexagonal M6")</li>
+</ul>
+<h3 id="matrizinventariohoy">MatrizInventarioHoy</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>SUM(m.istock)</code></li>
+<li><strong>Origen</strong>: </li>
+<li>Tabla principal: <a href="../tables/#almmatubicaciones">AlmMatUbicaciones</a> (campo <code>istock</code>)</li>
+<li>Filtrado por CTE <a href="../with/#_inventario">_Inventario</a></li>
+<li><strong>Proceso</strong>: Sumatoria del stock disponible por material en todas las bodegas</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0</li>
+</ul>
+<h3 id="matrizconsumoanalisis">MatrizConsumoAnalisis</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>Vista [Compras].<a href="./view.md#consumomaterialhistorico">ConsumoMaterialHistorico</a></li>
+<li>Datos provenientes de <a href="../tables/#almdetmovimientos">AlmDetMovimientos</a></li>
+<li><strong>Descripción</strong>: Consumo histórico en el período definido por <code>@RangoMesConsumo</code></li>
+<li><strong>Valores esperados</strong>: Números reales ≥ 0</li>
+</ul>
+<h3 id="matrizcostototal">MatrizCostoTotal</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>SUM(m.istock * m.CostoProm)</code></li>
+<li><strong>Origen</strong>: </li>
+<li>Tabla <a href="../tables/#almmatubicaciones">AlmMatUbicaciones</a> (campos <code>istock</code> y <code>CostoProm</code>)</li>
+<li>Calculado en CTE <a href="../with/#_inventario">_Inventario</a></li>
+<li><strong>Descripción</strong>: Valor monetario total del inventario disponible</li>
+<li><strong>Valores esperados</strong>: Números reales ≥ 0 (en pesos colombianos)</li>
+</ul>
+<h3 id="matrizcontribucion">MatrizContribucion</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>IIF(ISNULL(costo, 0) = 0, 0, (ConsumoAnalisis/0))</code> <em>(Nota: Error en fórmula)</em></li>
+<li><strong>Origen</strong>: </li>
+<li>CTE <a href="../with/#_operacionescontribucion">_OperacionesContribucion</a></li>
+<li>Datos base de <a href="./view.md#consumomaterialhistorico">Compras.ConsumoMaterialHistorico</a></li>
+<li><strong>Descripción</strong>: Porcentaje que representa el consumo del material respecto al total</li>
+<li><strong>Valores esperados</strong>: Decimales entre 0 y 1</li>
+</ul>
+<h3 id="matrizcostounitario">MatrizCostoUnitario</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>IIF(SUM(CostoTotal) = 0, 0, SUM(CostoTotal)/SUM(InventarioHoy))</code></li>
+<li><strong>Origen</strong>: </li>
+<li>Calculado a partir de <code>MatrizCostoTotal</code> y <code>MatrizInventarioHoy</code></li>
+<li>Datos base de <a href="../tables/#almmatubicaciones">AlmMatUbicaciones</a></li>
+<li><strong>Descripción</strong>: Costo promedio por unidad de material</li>
+<li><strong>Valores esperados</strong>: Números reales ≥ 0</li>
+</ul>
+<h3 id="matrizclasificacion">MatrizClasificacion</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>Tabla <a href="../tables/#comprascondicionesabc">Compras.CondicionesAbc</a></li>
+<li>Asignado según rangos de contribución</li>
+<li><strong>Descripción</strong>: Clasificación ABC del material basada en su rotación</li>
+<li><strong>Valores esperados</strong>: </li>
+<li>'A' (Alta rotación)</li>
+<li>'B' (Media rotación)</li>
+<li>'C' (Baja rotación)</li>
+<li>'SIN ROTACIÓN'</li>
+</ul>
+<h3 id="matriznomproveedor">MatrizNomProveedor</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>Consulta a <a href="../tables/#almsolicitudes">AlmSolicitudes</a> y <a href="../tables/#genproveedores">GenProveedores</a></li>
+<li>Última OC por material</li>
+<li><strong>Descripción</strong>: Nombre del proveedor principal del material</li>
+<li><strong>Valores esperados</strong>: </li>
+<li>Nombres de proveedores (ej. "Distribuidora Andina S.A.")</li>
+<li>'N/A' para materiales sin historial de compras</li>
+</ul>
+<h3 id="matrizleadtime">MatrizLeadTime</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>Campo <code>LeadTime</code> de <a href="../tables/#genmateriales">genMateriales</a></li>
+<li><strong>Descripción</strong>: Tiempo estimado de entrega desde la orden hasta la recepción</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0 (días hábiles)</li>
+</ul>
+<h3 id="matrizpromedioconsumo">MatrizPromedioConsumo</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>Vista [Compras].<a href="./view.md#consumopromediomaterial">ConsumoPromedioMaterial</a></li>
+<li>Datos calculados desde <a href="../tables/#almdetmovimientos">AlmDetMovimientos</a></li>
+<li><strong>Descripción</strong>: Consumo diario promedio en el período analizado</li>
+<li><strong>Valores esperados</strong>: Números reales ≥ 0</li>
+</ul>
+<h3 id="matrizdesvestandar">MatrizDesvEstandar</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>Vista [Compras].<a href="./view.md#consumopromediomaterial">ConsumoPromedioMaterial</a></li>
+<li><strong>Descripción</strong>: Variabilidad del consumo del material</li>
+<li><strong>Valores esperados</strong>: Números reales ≥ 0</li>
+</ul>
+<h3 id="matrizsafetystock">MatrizSafetyStock</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>ROUND((cpm.MediaDia * @ComprasSafetyStock), 0)</code></li>
+<li><strong>Parámetros</strong>: </li>
+<li><code>@ComprasSafetyStock</code> de <a href="../tables/#genparametrizacion">GenParametrizacion</a></li>
+<li><strong>Descripción</strong>: Stock mínimo para cubrir fluctuaciones de demanda</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0</li>
+</ul>
+<h3 id="matrizreorderpoint">MatrizReorderPoint</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>((cpm.MediaDia * LeadTime) + cpm.DesvEstandar + SafetyStock)</code></li>
+<li><strong>Componentes</strong>:</li>
+<li><code>MediaDia</code>: De <a href="./view.md#consumopromediomaterial">Compras.ConsumoPromedioMaterial</a></li>
+<li><code>LeadTime</code>: De <a href="../tables/#genmateriales">genMateriales</a></li>
+<li><strong>Descripción</strong>: Punto para disparar una nueva orden de compra</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0</li>
+</ul>
+<h3 id="matrizcostodeordenar">MatrizCostoDeOrdenar</h3>
+<ul>
+<li><strong>Fórmula</strong>:
+  <code>sql
+  IIF(AporteNacional = 'SI',
+      ((PrecioDeCompra * @PorcentajeCostoOrdenar) + (ValorManoDeObra/TotalMateriales)),
+      (ValorManoDeObra/TotalMateriales)
+  )</code></li>
+<li><strong>Origen</strong>:</li>
+<li>CTE <a href="../with/#wtmanodeobra">WTMANODEOBRA</a></li>
+<li>Parámetros de <a href="../tables/#genparametrizacion">GenParametrizacion</a></li>
+<li><strong>Descripción</strong>: Costo administrativo de realizar un pedido</li>
+<li><strong>Valores esperados</strong>: Números reales ≥ 0</li>
+</ul>
+<h3 id="matrizcostodeinventariound">MatrizCostoDeInventarioUnd</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>PrecioDeCompra * @RentaMesCDT</code></li>
+<li><strong>Componentes</strong>:</li>
+<li><code>PrecioDeCompra</code>: De CTE <a href="../with/#_wtpreciodecompra">_WTPRECIODECOMPRA</a></li>
+<li><code>@RentaMesCDT</code>: De <a href="../tables/#genparametrizacion">GenParametrizacion</a></li>
+<li><strong>Descripción</strong>: Costo de oportunidad por mantener inventario</li>
+<li><strong>Valores esperados</strong>: Números reales ≥ 0</li>
+</ul>
+<h3 id="matrizpreciodecompra">MatrizPrecioDeCompra</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>CTE <a href="../with/#_wtpreciodecompra">_WTPRECIODECOMPRA</a></li>
+<li>Datos de:<ul>
+<li><a href="../tables/#genmateriales">genMateriales</a></li>
+<li><a href="../tables/#comprasliquidacionimportaciones">Compras.LiquidacionImportaciones</a></li>
+<li><a href="../tables/#compraspreciodolarmateriales">Compras.PrecioDolarMateriales</a></li>
+</ul>
+</li>
+<li><strong>Descripción</strong>: Último precio unitario pagado por el material</li>
+<li><strong>Valores esperados</strong>: Números reales &gt; 0</li>
+</ul>
+<h3 id="matrizeoq">MatrizEOQ</h3>
+<ul>
+<li><strong>Fórmula</strong>:
+  <code>sql
+  IIF(CostoDeInventarioUnd = 0, 0,
+      ROUND((sqrt((2 * PromedioConsumo * CostoDeOrdenar)/CostoDeInventarioUnd)),0)
+  )</code></li>
+<li><strong>Componentes</strong>:</li>
+<li><code>PromedioConsumo</code>: De <a href="./view.md#consumopromediomaterial">Compras.ConsumoPromedioMaterial</a></li>
+<li><code>CostoDeOrdenar</code>: Calculado previamente</li>
+<li><strong>Descripción</strong>: Cantidad óptima de compra según modelo EOQ</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0</li>
+</ul>
+<h3 id="matrizorden">MatrizOrden</h3>
+<ul>
+<li><strong>Fórmula</strong>:
+  <code>sql
+  IIF(CantSugerida &lt;= 0, 'NO ORDENAR',
+      IIF(InventarioDePosicion &gt; ReorderPoint, 'NO ORDENAR', 'ORDENAR')
+  )</code></li>
+<li><strong>Lógica</strong>: </li>
+<li>Compara <code>InventarioDePosicion</code> con <code>ReorderPoint</code></li>
+<li>Considera <code>CantSugerida</code></li>
+<li><strong>Descripción</strong>: Recomendación de compra automatizada</li>
+<li><strong>Valores esperados</strong>: 'ORDENAR' / 'NO ORDENAR'</li>
+</ul>
+<h3 id="matrizbackorder">MatrizBackOrder</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>CTE <a href="../with/#_wtbackorder">_WTBACKORDER</a></li>
+<li>Tabla <a href="../tables/#comprasbackordersolicitud">compras.BackOrderSolicitud</a></li>
+<li><strong>Descripción</strong>: Cantidad pendiente por entregar de órdenes confirmadas</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0</li>
+</ul>
+<h3 id="matriztransito">MatrizTransito</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>CTE <a href="../with/#_wtmaterialespendientes">_WTMATERIALESPENDIENTES</a></li>
+<li>Tablas:<ul>
+<li><a href="../tables/#almdetsolicitudes">almDetSolicitudes</a></li>
+<li><a href="../tables/#almsolicitudes">almSolicitudes</a></li>
+</ul>
+</li>
+<li><strong>Descripción</strong>: Cantidad de material en órdenes aprobadas no recibidas</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0</li>
+</ul>
+<h3 id="matrizconsumomaximo">MatrizConsumoMaximo</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>Vista [Compras].<a href="./view.md#consumopromediomaterial">ConsumoPromedioMaterial</a></li>
+<li><strong>Descripción</strong>: Consumo máximo histórico registrado</li>
+<li><strong>Valores esperados</strong>: Números reales ≥ 0</li>
+</ul>
+<h3 id="matrizconsumominimo">MatrizConsumoMinimo</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>Vista [Compras].<a href="./view.md#consumopromediomaterial">ConsumoPromedioMaterial</a></li>
+<li><strong>Descripción</strong>: Consumo mínimo histórico registrado</li>
+<li><strong>Valores esperados</strong>: Números reales ≥ 0</li>
+</ul>
+<h3 id="matrizcomprassafetystock">MatrizComprasSafetyStock</h3>
+<ul>
+<li><strong>Origen</strong>: </li>
+<li>Parámetro <code>@ComprasSafetyStock</code> del SP</li>
+<li>Valor fijo de <a href="../tables/#genparametrizacion">GenParametrizacion</a></li>
+<li><strong>Descripción</strong>: Días de stock de seguridad configurados</li>
+<li><strong>Valores esperados</strong>: Enteros &gt; 0 (ej. 15 días)</li>
+</ul>
+<h2 id="campos-detallados">Campos Detallados</h2>
+<h3 id="matrizinventariodeposicion">MatrizInventarioDePosicion</h3>
+<ul>
+<li><strong>Fórmula</strong>: <code>(InventarioHoy + Transito - BackOrder)</code></li>
+<li><strong>Componentes</strong>:</li>
+<li>
+<p><code>InventarioHoy</code>:</p>
+<ul>
+<li><strong>Tabla origen</strong>: <a href="../tables/#almmatubicaciones">AlmMatUbicaciones</a></li>
+<li><strong>Campo</strong>: <code>istock</code></li>
+<li><strong>Proceso</strong>: Sumatoria de stock físico disponible</li>
+</ul>
+</li>
+<li>
+<p><code>Transito</code>:</p>
+<ul>
+<li><strong>Tabla origen</strong>: <a href="../tables/#almdetsolicitudes">almDetSolicitudes</a></li>
+<li><strong>Campos</strong>: <code>iCantidadSol</code>, <code>iCantidadIng</code></li>
+<li><strong>Filtros</strong>: </li>
+<li>Estados 2,3,5 en <a href="../tables/#almsolicitudes">almSolicitudes</a></li>
+<li>Diferencia positiva entre solicitado e ingresado</li>
+</ul>
+</li>
+<li>
+<p><code>BackOrder</code>:</p>
+<ul>
+<li><strong>Tabla origen</strong>: <a href="../tables/#comprasbackordersolicitud">compras.BackOrderSolicitud</a></li>
+<li><strong>Campo</strong>: <code>BackOrderSolicitudCantidadPendiente</code></li>
+<li><strong>Filtro</strong>: <code>BackOrderSolicitudEstado = 1</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Descripción</strong>: Inventario neto considerando pendientes por recibir y entregar</p>
+</li>
+<li><strong>Valores esperados</strong>: Enteros (pueden ser negativos si hay más backorders que inventario)</li>
+</ul>
+<h3 id="matrizcantidadsugerida">MatrizCantidadSugerida</h3>
+<ul>
+<li>
+<p><strong>Fórmula completa</strong>:
+  <code>sql
+  IIF(AporteNacional = 'NO',
+      ISNULL(PromedioConsumo,0) + ISNULL(BackOrder,0) - ISNULL(Transito,0) - ISNULL(InventarioHoy,0),
+      IIF(CostoDeInventarioUnd = 0, 0,
+         (ROUND((sqrt((2 * PromedioConsumo * CostoDeOrdenar)/CostoDeInventarioUnd)),0))
+         + ISNULL(BackOrder,0) - ISNULL(Transito,0)
+      )
+  )</code></p>
+</li>
+<li>
+<p><strong>Lógica por tipo de material</strong>:</p>
+</li>
+<li>
+<p><strong>Materiales Importados</strong>:</p>
+</li>
+<li><strong>Fórmula</strong>: <code>PromedioConsumo + BackOrder - Transito - InventarioHoy</code></li>
+<li>
+<p><strong>Componentes</strong>:</p>
+<ul>
+<li><code>PromedioConsumo</code>: De <a href="./view.md#consumopromediomaterial">Compras.ConsumoPromedioMaterial</a></li>
+<li><code>BackOrder</code>: De <a href="../tables/#comprasbackordersolicitud">compras.BackOrderSolicitud</a></li>
+<li><code>Transito</code>: De <a href="../tables/#almdetsolicitudes">almDetSolicitudes</a></li>
+<li><code>InventarioHoy</code>: De <a href="../tables/#almmatubicaciones">AlmMatUbicaciones</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Materiales Nacionales</strong>:</p>
+</li>
+<li><strong>Fórmula</strong>: <code>EOQ + BackOrder - Transito</code></li>
+<li>
+<p><strong>Componentes EOQ</strong>:</p>
+<ul>
+<li><code>PromedioConsumo</code>: De <a href="./view.md#consumopromediomaterial">Compras.ConsumoPromedioMaterial</a></li>
+<li><code>CostoDeOrdenar</code>: Calculado previamente</li>
+<li><code>CostoDeInventarioUnd</code>: De <a href="../tables/#genmateriales">genMateriales</a> y <a href="../tables/#comprasliquidacionimportaciones">Compras.LiquidacionImportaciones</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Descripción</strong>: Cantidad recomendada para ordenar considerando:</p>
+</li>
+<li>Para importados: Cubrir consumo promedio y backorders, menos lo que está en tránsito e inventario</li>
+<li>Para nacionales: Usar modelo EOQ ajustado por backorders y tránsito</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0 (0 cuando no se recomienda ordenar)</li>
+</ul>
+<h2 id="campos-por-bodega">Campos por Bodega</h2>
+<h3 id="inventario-por-bodega">Inventario por Bodega</h3>
+<ul>
+<li><strong>Pruebas_Almacén Zonal calle 80</strong></li>
+<li><strong>Pruebas_Tintal</strong></li>
+<li><strong>Pruebas_Alimentadores</strong> </li>
+<li><strong>Pruebas_Suba</strong></li>
+<li><strong>Origen</strong>: </li>
+<li>CTE <a href="../with/#_pivotinventario">_PIVOTINVENTARIO</a></li>
+<li>Datos base de <a href="../tables/#almmatubicaciones">AlmMatUbicaciones</a></li>
+<li><strong>Proceso</strong>: Pivot de bodegas 1,2,8,23</li>
+<li><strong>Descripción</strong>: Desglose del inventario físico por ubicación</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0</li>
+</ul>
+<h3 id="consumo-por-bodega">Consumo por Bodega</h3>
+<ul>
+<li><strong>Consumo Almacén Zonal calle 80</strong></li>
+<li><strong>Consumo Tintal</strong></li>
+<li><strong>Consumo Alimentadores</strong></li>
+<li><strong>Consumo Suba</strong></li>
+<li><strong>Origen</strong>:</li>
+<li>CTE <a href="../with/#_pivotconsumo">_PIVOTCONSUMO</a></li>
+<li>Datos base de <a href="../tables/#almdetmovimientos">AlmDetMovimientos</a></li>
+<li><strong>Proceso</strong>: Pivot de consumos por bodega</li>
+<li><strong>Descripción</strong>: Desglose histórico de consumos por ubicación</li>
+<li><strong>Valores esperados</strong>: Enteros ≥ 0</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.expand", "toc.integrate", "content.code.annotate", "content.action.edit", "content.tabs.link"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>
