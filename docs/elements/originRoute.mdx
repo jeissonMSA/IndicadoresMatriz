@@ -1,0 +1,31 @@
+import React from "react";
+import NestedList from "@site/src/components/NestedList/NestedList";
+import { originRoute } from "@site/src/data/originRoute";
+
+export const RenderRoutes = ({ data }) => {
+  return (
+    <div className="render-routes-container">
+      {Object.entries(data).map(([key, items]) => (
+        <div key={key} className="route-section">
+          <h2 className="route-title">{key}</h2>
+          <div className="route-content">
+            <NestedList items={items} />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export const OriginRouteViewer = () => {
+  return (
+    <div className="origin-route-viewer">
+      <h1>Data Origin Routes</h1>
+      <RenderRoutes data={originRoute} />
+    </div>
+  );
+};
+
+# hola
+
+<RenderRoutes data={originRoute} />

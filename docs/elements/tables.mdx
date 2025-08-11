@@ -1,0 +1,40 @@
+import { tables as data } from "@site/src/data/tables";
+import CodeBlock from "@theme/CodeBlock";
+export const TablesToHTML = ({tables = data}) => {
+  return (
+    <div>
+      {Object.entries(tables).map(([key, table]) => (
+        <div key={key} >
+          <h2 id={table.label.toLowerCase()} style={{ paddingTop: "5rem" }}>{table.label}</h2>
+          <p>{table.description}</p>
+
+          {table.alias && table.alias.length > 0 && (
+            <p><strong>Alias:</strong> {table.alias.join(", ")}</p>
+          )}
+
+          <table border="1" cellPadding="5" cellSpacing="0" style={{ width: 'object-fit' }}>
+            <thead>
+              <tr>
+                <th>Campo</th>
+                <th>Tipo</th>
+              </tr>
+            </thead>
+            <tbody>
+              {table.fields.map((field, idx) => (
+                <tr key={idx}>
+                  <td id={`${table.label}_${field.name}`} >{field.name}</td>
+                  <td>{field.type}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+    </div>
+
+);
+};
+
+{/* <CodeBlock language="json">{JSON.stringify(data, null, 2)}</CodeBlock> */}
+
+<TablesToHTML />
