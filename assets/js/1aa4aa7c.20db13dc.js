@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkindicadores_matriz=self.webpackChunkindicadores_matriz||[]).push([[606],{4612:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/IndicadoresMatriz/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

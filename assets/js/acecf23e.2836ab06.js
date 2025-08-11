@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkindicadores_matriz=self.webpackChunkindicadores_matriz||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/IndicadoresMatriz/blog","blogTitle":"Blog","authorsListPath":"/IndicadoresMatriz/blog/authors"}')}}]);
