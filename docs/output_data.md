@@ -35,7 +35,7 @@ Todos los campos que retorna están en [\_WTCONSULTAFINAL](elements/with.md_WTCO
 
 ### MatrizInventarioHoy
 
-- **Fórmula**: `SUM(m.istock)`
+- **Fórmula**: [`SUM(m.istock)`](./legible_output_data#inventario-actual)
 - **Origen**:
   <div data-toggle-list />
 
@@ -66,7 +66,7 @@ Todos los campos que retorna están en [\_WTCONSULTAFINAL](elements/with.md_WTCO
 
 ### MatrizCostoTotal
 
-- **Fórmula**: `SUM(m.istock - m.CostoProm)`
+- **Fórmula**: [`SUM(m.istock * m.CostoProm)`](./legible_output_data.md#valor-del-inventario)
 - **Origen**:
   <div data-toggle-list />
 
@@ -81,7 +81,7 @@ Todos los campos que retorna están en [\_WTCONSULTAFINAL](elements/with.md_WTCO
 
 ### MatrizContribucion
 
-- **Fórmula**: `(ConsumoAnalisis/costo)`
+- **Fórmula**: [`(ConsumoAnalisis/costo)`](./legible_output_data.md#importancia-del-producto)
 - **Origen**:
   <div data-toggle-list />
   - [\_WTCONSULTABASE](elements/with.md#_wtconsultabase) > [\_OperacionesContribucion](elements/with.md#_operacionescontribucion)
@@ -111,7 +111,7 @@ La diferencia entre Costo Y ConsumoAnalisis es la suma, uno es la suma de todos 
 
 ### MatrizCostoUnitario
 
-- **Fórmula**: `IIF(SUM(CostoTotal) = 0, 0, SUM(CostoTotal)/SUM(InventarioHoy))`
+- **Fórmula**: [`IIF(SUM(CostoTotal) = 0, 0, SUM(CostoTotal)/SUM(InventarioHoy))`](./legible_output_data#costo-por-unidad)
 - **Origen**:
   <div data-toggle-list />
 
@@ -249,6 +249,7 @@ La diferencia entre Costo Y ConsumoAnalisis es la suma, uno es la suma de todos 
 
 ### MatrizDesvEstandar
 
+- **Formula**: [Variabilidad del Uso](./legible_output_data.md#variabilidad-del-uso)
 - **Origen**:
   <div data-toggle-list />
    - [\_WTCONSULTABASE](elements/with.md#_wtconsultabase) > `ISNULL(cpm.DesvEstandar, 0) DesvEstandar`
@@ -265,7 +266,7 @@ La diferencia entre Costo Y ConsumoAnalisis es la suma, uno es la suma de todos 
 
 ### MatrizSafetyStock
 
-- **Fórmula**: `ROUND((cpm.MediaDia - @ComprasSafetyStock), 0)`
+- **Fórmula**: [`ROUND((cpm.MediaDia - @ComprasSafetyStock), 0)`](./legible_output_data.md#stock-de-seguridad)
 - **Origen**:
   <div data-toggle-list />
   - [\_WTCONSULTABASE](elements/with.md#_wtconsultabase) > `ISNULL(ROUND((cpm.MediaDia * @ComprasSafetyStock) ,0) ,0) SafetyStock`
@@ -291,7 +292,7 @@ La diferencia entre Costo Y ConsumoAnalisis es la suma, uno es la suma de todos 
 
 ### MatrizReorderPoint
 
-- **Fórmula**: `((cpm.MediaDia * LeadTime) + cpm.DesvEstandar + SafetyStock)`
+- **Fórmula**: [`((cpm.MediaDia * LeadTime) + cpm.DesvEstandar + SafetyStock)`](./legible_output_data.md#punto-de-reorden)
 - **Origen**:  
     <div data-toggle-list />
   - [\_WTCONSULTABASE](elements/with.md#_wtconsultabase) > 
@@ -521,12 +522,12 @@ La diferencia entre Costo Y ConsumoAnalisis es la suma, uno es la suma de todos 
 
 ### MatrizEOQ
 
-- **Fórmula**:
+- **Fórmula**: [Formula](./legible_output_data.md#cantidad-ideal-de-compra-eoq)
   ```sql
   IIF(CostoDeInventarioUnd = 0, 0,
           ROUND((sqrt((2 - PromedioConsumo - CostoDeOrdenar)/CostoDeInventarioUnd)),0)
   )
-  ```
+  ``` 
 - **Origen**:
   <div data-toggle-list />
    ```sql
@@ -893,3 +894,5 @@ k
 - **Proceso**: Pivot de consumos por bodega
 - **Descripción**: Desglose histórico de consumos por ubicación
 - **Valores esperados**: Enteros ≥ 0
+
+
